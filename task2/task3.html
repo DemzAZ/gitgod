@@ -9,16 +9,16 @@
 <fieldset form=>
 	<legend>Форма для регистрации контейнер</legend>
 	<div>
-		Name<br><input type="text" name=name>
+		<span>Name</span><br><input type="text" name=name>
 	</div>
 	<br>
 	<div>
-		Email<br>
+		<span>Email</span><br>
 		<input type="email" name="mail">
 	</div>
 	<br>
 	<div>
-		Sex
+		<span>Sex</span><br>
 		<input type="radio" name="sex"id="male" value="male">
 		<label for="male">Мужиик</label>
 		<input type="radio" name="sex" id="female" value="female">
@@ -26,7 +26,7 @@
 	</div>
 		<br>
 	<div>
-	Current status <br>
+	<span>Current status</span> <br>
 	<input type="checkbox" name="status" id="student" value="student">
 		<label for="student">Студент</label><br>
 	<input type="checkbox"name="status" id="employed" value="employed">
@@ -36,14 +36,14 @@
 	</div>
 	<br>
 	<div>
-		Month and Year of birth<br>
+		<span>Month and Year of birth</span><br>
 		<select name="month" id="month">
 			<option value="январь">Январь</option>
 			<option value="февраль">Февраль</option>
 			<option value="март">Март</option>
 			<option value="апрель">Апрель</option>
 			<option value="май">Май</option>
-			<option value="июнь">Июнь</option>
+			<option selected value="июнь">Июнь</option>
 			<option value="июль">Июль</option>
 			<option value="август">Август</option>
 			<option value="сентябрь">Сентябь</option>
@@ -51,12 +51,34 @@
 			<option value="ноябрь">Ноябрь</option>
 			<option value="декабрь">Декабрь</option>
 		</select>
-	<select name="year" id="year">
-	<option value="1993">1993</option>
-	<option value="1994">1994</option>
-	<option value="1995">1995</option>
-	</select>
+		<input type="number" name="date_of_birth" value="1994" max="2015" min="1960" maxlength="4"/>
 </div>
+	<div>
+		<!--Спросить у Сашки -->
+<span>Skills and Technologies</span><br>
+		<select name="skills" id="skills" size="10">
+		<option>HTML</option>
+		<option>CSS</option>
+		<option>JavaScript</option>
+		<option>git</option>
+		<option><strong>Soft skills</strong>
+		<option>Time management</option>
+		<option>Proactivity</option>
+		<option>Teamwork</option>
+		<option>Leadership</option>
+		</option>
+		</select></p>
+		</select>
+	</div>
+
+	<div>
+		<span>Photo</span><br>
+		<input type="file">
+	</div>
+	<div>
+		<span>Comments</span><br>
+		<textarea name="comm" id="comm" cols="20" rows="3" placeholder="введите свои пожелания"></textarea>
+	</div>
 </fieldset>
 </body>
 </html>
