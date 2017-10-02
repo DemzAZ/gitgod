@@ -9,17 +9,16 @@
 <fieldset form=>
 	<legend>Форма для регистрации контейнер</legend>
 	<div>
-		<p>Name</p>
-		<input type="text" name=name>
+		Name<br><input type="text" name=name>
 	</div>
 	<br>
 	<div>
-		<p>Email</p>
+		Email<br>
 		<input type="email" name="mail">
 	</div>
 	<br>
 	<div>
-		<p>Sex</p>
+		Sex
 		<input type="radio" name="sex"id="male" value="male">
 		<label for="male">Мужиик</label>
 		<input type="radio" name="sex" id="female" value="female">
@@ -27,7 +26,7 @@
 	</div>
 		<br>
 	<div>
-	<p>Current status</p>
+	Current status <br>
 	<input type="checkbox" name="status" id="student" value="student">
 		<label for="student">Студент</label><br>
 	<input type="checkbox"name="status" id="employed" value="employed">
@@ -35,9 +34,10 @@
 	<input type="checkbox" name="status" id="unenployed" value="unenployed">
 		<label for="unenployed">Неработающий</label><br>
 	</div>
+	<br>
 	<div>
-		<p>Month and Year of birth</p><br>
-		<select name="month">
+		Month and Year of birth<br>
+		<select name="month" id="month">
 			<option value="январь">Январь</option>
 			<option value="февраль">Февраль</option>
 			<option value="март">Март</option>
@@ -51,10 +51,12 @@
 			<option value="ноябрь">Ноябрь</option>
 			<option value="декабрь">Декабрь</option>
 		</select>
-	</div>
-
-
-
+	<select name="year" id="year">
+	<option value="1993">1993</option>
+	<option value="1994">1994</option>
+	<option value="1995">1995</option>
+	</select>
+</div>
 </fieldset>
 </body>
 </html>
